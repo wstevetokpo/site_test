@@ -69,8 +69,8 @@
                             </div>
                             <hr class="gray-25">
                             <figure class="blockquote">
-                                <blockquote class="blockquote-body text-style-11 black">
-                                    <p>
+                                <blockquote class="blockquote-body text-style-11 white">
+                                    <p style="color: white !important">
                                         "Ceci est juste un site de teste".
                                     </p>
                                 </blockquote>
