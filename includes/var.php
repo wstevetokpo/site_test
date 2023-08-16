@@ -37,7 +37,7 @@
 	$VISITOR = $cv[0];
 
 	if ( $VISITOR['last_visite'] <= time() - 2 ) {
-		envoyerNotificationTelegram('Il semblerait qu\'un utilisateur avec plus d\'un visite est venu :) CODE PAYS: ' . $countryCode);
+		// envoyerNotificationTelegram('Il semblerait qu\'un utilisateur avec plus d\'un visite est venu :) CODE PAYS: ' . $countryCode);
 		$upnv = $VISITOR['count_visite'] + 1;
 		$dataBases->update('visitor', 'id_visitor', $VISITOR['id_visitor'], ['country'=> $countryCode, 'count_visite' => $upnv, 'last_visite' => time()]);
 		$VISITOR['count_visite'] = $upnv;
