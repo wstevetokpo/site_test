@@ -83,14 +83,14 @@
                                 Explorez notre univers de services polyvalents allant de la création de sites captivants au marketing digital percutant, en passant par un design graphique innovant et une rédaction web qui donne vie à vos idées. Faites émerger le meilleur de votre entreprise avec notre expertise complète.
                             </p>
                         </div>
-                        <a href="<?= HOME_PATH ?>nous-contacter" class="button arrow-button next scheme-2 tertiary">
+                        <a href="<?= HOME_PATH ?>nos-services" class="button arrow-button next scheme-2 tertiary">
                             <span class="arrow">
                                 <span class="item"></span>
                                 <span class="item"></span>
                             </span>
                             <span class="line"></span>
                             <span class="text">
-                                CONTACTS
+                                COMMENCER
                             </span>
                         </a>
                     </div>
@@ -381,7 +381,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <a href="<?= HOME_PATH ?>nous-contacter" class="full-link"></a>
+                            <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
                             <div class="overlay tertiary-25"></div>
                         </div>
                     </div>
@@ -458,7 +458,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <a href="<?= HOME_PATH ?>nous-contacter" class="full-link"></a>
+                            <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
                             <div class="overlay tertiary-25"></div>
                         </div>
                     </div>
@@ -529,7 +529,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <a href="<?= HOME_PATH ?>nous-contacter" class="full-link"></a>
+                            <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
                             <div class="overlay tertiary-25"></div>
                         </div>
                     </div>
