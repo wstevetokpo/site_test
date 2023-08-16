@@ -273,7 +273,7 @@
                         </div>
                     </div>
                     <div class="gallery">
-                        <a href="<?= HOME_PATH ?>assets/vid/b-29.mp4" class="button outline lightbox-link white tertiary-hover magnetic-effect">
+                        <a href="<?= HOME_PATH ?>assets/img/c-22.png" class="button outline lightbox-link white tertiary-hover magnetic-effect">
                             <span class="button-text white white-hover">
                                 En savoir plus
                             </span>
@@ -561,50 +561,8 @@
                     </div>
                     <div class="col-12 col-md-6 align-h-center align-v-center">
                         <div class="form-area scheme-2 tertiary">
-                            <form class="form-fields needs-validation">
-                                <div class="form-row row">
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" id="nl_nom" class="form-control" placeholder="John">
-                                        <label for="nl_nom" class="form-label">
-                                            Nom
-                                        </label>
-                                    </div>
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="email" id="nl_email" class="form-control" placeholder="name@example.com">
-                                        <label for="nl_email" class="form-label">
-                                            Email
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" required>
-                                            <label class="form-label form-check-label">
-                                                J'accepte les
-                                                <a class="link white  tertiary-hover">
-                                                    <u>conditions d'utilisation</u>.
-                                                </a>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col col-12">
-                                        <button class="button arrow-button next scheme-2 tertiary">
-                                            <span class="arrow">
-                                                <span class="item"></span>
-                                                <span class="item"></span>
-                                            </span>
-                                            <span class="line"></span>
-                                            <span class="text">
-                                                REJOINDRE
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <span class="form-alert success">Your message was sent successful. Thanks.</span>
-                                <span class="form-alert error">Sorry. We were unable to send your message.</span>
+                            <form onsubmit="return nl_form()" id="nl_form" class="form-fields needs-validation">
+                                <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/nlForm.php'; ?>
                             </form>
                         </div>
                     </div>

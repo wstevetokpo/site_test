@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="<?= $requestLang ?>">
-<?php $page_title = 'Acceuil du site test'; $page_md = 'Découvrez notre petite start-up digital' ?>
+<?php $page_title = 'A propos de nous'; $page_md = 'Voici sur cette page ce que nous sommes' ?>
 <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/head.php'; ?>
 <body class="shock-body">
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/header.php'; ?>
