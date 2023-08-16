@@ -1,0 +1,28 @@
+<?php
+
+    $LANG = [
+        'index_title' => APP_NAME . ': Passion, Contenu Exclusif des créateurs top model en ' . date('Y'),
+        'index_md' => 'Explorez passions uniques sur notre plateforme en ' . date('Y') . '. Accédez à contenu exclusif, connectez avec esprits similaires et invitez chez vous. Rejoignez-nous!',
+        'home' => 'Acceuil',
+        'logo_of' => 'Logo de',
+        'search' => 'Rechercher',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+    ];
