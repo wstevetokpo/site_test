@@ -27,10 +27,25 @@
 			$countryCode = $data['country'];
 		}	
 	}
-	
+	function isMobileDevice() {
+		$userAgent = $_SERVER['HTTP_USER_AGENT'];
+		
+		$mobileKeywords = array('mobile', 'android', 'iphone', 'ipod', 'blackberry', 'webos', 'windows phone');
+
+		foreach ($mobileKeywords as $keyword) {
+			if (stripos($userAgent, $keyword) !== false) {
+				return 2;
+			}
+		}
+
+		return 1;
+	}
+
+	$imd = isMobileDevice();
+
 	$cv = $dataBases->get('visitor', '`cookie`=?', [$visitorCookie], 'id_visitor', FALSE, 0, 0);
 	if ( count($cv) === 0 ) {
-		$dataBases->put('visitor', ['cookie', 'adresse_ip', 'country', 'last_visite', 'first_visite'], [$visitorCookie, getIpAdresse(), $countryCode, time(), time()]);
+		$dataBases->put('visitor', ['device', 'cookie', 'adresse_ip', 'country', 'last_visite', 'first_visite'], [$imd, $visitorCookie, getIpAdresse(), $countryCode, time(), time()]);
 		$cv = $dataBases->get('visitor', '`cookie`=?', [$visitorCookie], 'id_visitor', FALSE, 0, 0);
 	}
 
@@ -39,7 +54,7 @@
 	if ( $VISITOR['last_visite'] <= time() - 2 ) {
 		// envoyerNotificationTelegram('Il semblerait qu\'un utilisateur avec plus d\'un visite est venu :) CODE PAYS: ' . $countryCode);
 		$upnv = $VISITOR['count_visite'] + 1;
-		$dataBases->update('visitor', 'id_visitor', $VISITOR['id_visitor'], ['country'=> $countryCode, 'count_visite' => $upnv, 'last_visite' => time()]);
+		$dataBases->update('visitor', 'id_visitor', $VISITOR['id_visitor'], ['device' => $imd, 'country'=> $countryCode, 'count_visite' => $upnv, 'last_visite' => time()]);
 		$VISITOR['count_visite'] = $upnv;
 		$VISITOR['last_visite'] = time();
 	}
