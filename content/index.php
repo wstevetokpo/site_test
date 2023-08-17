@@ -39,36 +39,38 @@
         ]
     ];
 
-    $services = [
+    $textes = [
 		[
-			'icon' => 'cube-outline',
-			'title' => 'Conception de produits',
-			'content' => 'Un coefficient large et efficace de génération et de développement</br>d\'idées à travers un processus qui conduit à de nouveaux produits.'
+			'title' => 'Ériger </span><span class="text-2 text-style-6 text-italic">des <mark
+            class="animated-underline primary-50"> Portails Uniques</mark>',
+			'texte' => 'Du concept à la réalité virtuelle, nous bâtissons des sites qui racontent votre histoire avec élégance et fonctionnalité. Chaque ligne de code est une pierre angulaire de votre présence en ligne exceptionnelle.',
+			'citation' => 'Le design n\'est pas seulement ce à quoi ça ressemble et à quoi ça se sent. Le design, c\'est comment ça fonctionne',
+            'autor' => 'Steve Jobs',
+            'img' => HOME_PATH . 'assets/img/b-10.webp'
 		],
 		[
-			'icon' => 'layers-outline',
-			'title' => 'Création de marque',
-			'content' => 'À travers des concepts innovants, nous développons la stratégie et</br> l\'histoire de la marque afin de donner à l\'entreprise de l\'autorité.'
+			'title' => 'Éclairer </span><span class="text-2 text-style-6 text-italic">Vos <mark
+            class="animated-underline primary-50"> Pistes Numériques</mark>',
+			'texte' => 'Dans l\'océan numérique en constante évolution, nous tracent des chemins éclairés par des stratégies innovantes. Du SEO aux campagnes ciblées, nous faisons briller votre marque sous les feux des projecteurs.',
+			'citation' => 'Le marketing n\'est plus sur les trucs que vous fabriquez, mais sur les histoires que vous racontez',
+            'autor' => 'Seth Godin',
+            'img' => HOME_PATH . 'assets/img/b-14.webp'
 		],
-		[
-			'icon' => 'videocam-outline',
-			'title' => 'Production vidéo',
-			'content' => 'Montage vidéo structuré pour présenter toutes les informations du projet,</br> y compris les films et les émissions de télévision, les publicités et la publicité.'
+        [
+			'title' => 'Sculpter </span><span class="text-2 text-style-6 text-italic">les <mark
+            class="animated-underline primary-50"> Idées en Images</mark>',
+			'texte' => 'Notre équipe de créatifs sculpte les idées en visuels saisissants. Chaque ligne, chaque nuance, chaque détail est méticuleusement conçu pour captiver et incarner l\'esprit de votre marque.',
+			'citation' => 'L\'art existe parce que la vie n\'est pas suffisante',
+            'autor' => 'Ferreira Gullar',
+            'img' => HOME_PATH . 'assets/img/b-34.webp'
 		],
-		[
-			'icon' => 'bag-check-outline',
-			'title' => 'Marketing numérique',
-			'content' => 'Nous intégrons des canaux numériques tels que les moteurs de recherche,</br> les médias sociaux, les e-mails et d\'autres, afin d\'attirer des clients potentiels.'
-		],
-		[
-			'icon' => 'camera-outline',
-			'title' => 'Photographie artistique',
-			'content' => 'Que ce soit pour un événement décontracté ou professionnel, faire appel</br> à un professionnel fait toute la différence en matière de photographie.'
-		],
-		[
-			'icon' => 'game-controller-outline',
-			'title' => 'Développement de jeux',
-			'content' => 'L\'un des segments numériques les plus rentables au monde nécessite</br> une équipe créative et spécialisée pour concrétiser votre idée.'
+        [
+			'title' => 'Tisser </span><span class="text-2 text-style-6 text-italic">les <mark
+            class="animated-underline primary-50"> Mots en Magie</mark>',
+			'texte' => 'Les mots sont les fils de notre métier. Nous tissons des histoires qui intriguent, informent et engagent. Chaque mot est une note de la symphonie de votre présence en ligne.',
+			'citation' => 'Les mots ont le pouvoir de tant de choses, ils peuvent briser un cœur, guérir une blessure, créer de la joie ou engendrer de la douleur',
+            'autor' => 'Vironika Tugaleva',
+            'img' => HOME_PATH . 'assets/img/b-35.webp'
 		]
 	];
 
@@ -77,17 +79,6 @@
 <html lang="<?= $requestLang ?>">
 <?php $page_title = 'Acceuil du site test'; $page_md = 'Découvrez notre petite start-up digital' ?>
 <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/head.php'; ?>
-<style>
-    .scrollable-container {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
-    .scrollable-content {
-        white-space: nowrap;
-    }
-</style>
 <body class="shock-body">
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/header.php'; ?>
     <main id="main" class="shock-main bg-color black">
@@ -105,13 +96,15 @@
                         </h2>
                         <div class="description white-50">
                             <p>
-                                Notre mission est de fournir à nos clients des produits qui transformeront la manière dont les gens voient le monde.<br>
+                                Notre mission est de fournir à nos clients des produits qui transformeront la manière
+                                dont les gens voient le monde.<br>
                                 Transformer une idée en quelque chose qui fonctionne, voilà ce qui nous anime.
                             </p>
                         </div>
                     </div>
                     <div class="gallery mt-3">
-                        <a href="<?= HOME_PATH ?>assets/img/c-22.png" class="button outline lightbox-link white tertiary-hover magnetic-effect">
+                        <a href="<?= HOME_PATH ?>assets/img/c-22.png"
+                            class="button outline lightbox-link white tertiary-hover magnetic-effect">
                             <span class="button-text white white-hover">
                                 En savoir plus
                             </span>
@@ -120,7 +113,8 @@
                     </div>
                 </div>
                 <div class="image-wrapper" style="height: 100vh !important">
-                    <video class="video vh-75 fit-cover" style="height: 100vh !important" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <video class="video vh-75 fit-cover" style="height: 100vh !important" playsinline="playsinline"
+                        autoplay="autoplay" muted="muted" loop="loop">
                         <source src="<?= HOME_PATH ?>assets/vid/b-29.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -160,7 +154,10 @@
                         </span>
                         <div class="description gray">
                             <p>
-                                Explorez notre univers de services polyvalents allant de la création de sites captivants au marketing digital percutant, en passant par un design graphique innovant et une rédaction web qui donne vie à vos idées. Faites émerger le meilleur de votre entreprise avec notre expertise complète.
+                                Explorez notre univers de services polyvalents allant de la création de sites captivants
+                                au marketing digital percutant, en passant par un design graphique innovant et une
+                                rédaction web qui donne vie à vos idées. Faites émerger le meilleur de votre entreprise
+                                avec notre expertise complète.
                             </p>
                         </div>
                         <a href="<?= HOME_PATH ?>nos-services" class="button arrow-button next scheme-2 tertiary">
@@ -185,19 +182,22 @@
                         <span class="slide-action-title">
                             Qu'attendez-vous?
                         </span>
-                        <a href="#modal" class="slide-action-link animated-text scheme-2 tertiary" data-bs-toggle="modal" data-bs-target="#modal">
+                        <a href="#modal" class="slide-action-link animated-text scheme-2 tertiary"
+                            data-bs-toggle="modal" data-bs-target="#modal">
                             Explorer les fonctionnalités
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="slide-info">
                     <a class="slide-info-item">
                         <h3 class="slide-info-title">
                             Création de site <i class="fas fa-chevron-right icon"></i>
                         </h3>
                         <span class="slide-info-detail">
-                            Notre équipe experte en développement web crée des sites<span class="ellipse">...</span><br> innovants et fonctionnels qui captent l'essence de votre entreprise et offrent une expérience utilisateur exceptionnelle.
+                            Notre équipe experte en développement web crée des sites<span class="ellipse">...</span><br>
+                            innovants et fonctionnels qui captent l'essence de votre entreprise et offrent une
+                            expérience utilisateur exceptionnelle.
                         </span>
                     </a>
                     <a class="slide-info-item">
@@ -205,8 +205,9 @@
                             Marketing digital <i class="fas fa-chevron-right icon"></i>
                         </h3>
                         <span class="slide-info-detail">
-                            Nous vous aidons à étendre votre portée en ligne <span
-                            class="ellipse">...</span><br> grâce à des stratégies de marketing digital percutantes, en utilisant les dernières techniques pour attirer, engager et fidéliser votre audience.
+                            Nous vous aidons à étendre votre portée en ligne <span class="ellipse">...</span><br> grâce
+                            à des stratégies de marketing digital percutantes, en utilisant les dernières techniques
+                            pour attirer, engager et fidéliser votre audience.
                         </span>
                     </a>
                     <a class="slide-info-item">
@@ -214,7 +215,8 @@
                             Design graphique <i class="fas fa-chevron-right icon"></i>
                         </h3>
                         <span class="slide-info-detail">
-                            Notre talentueuse équipe de designers graphiques transforme vos idées en visuels captivants, en associant créativité et esthétique pour donner vie à votre marque.
+                            Notre talentueuse équipe de designers graphiques transforme vos idées en visuels captivants,
+                            en associant créativité et esthétique pour donner vie à votre marque.
                         </span>
                     </a>
                     <a class="slide-info-item">
@@ -222,14 +224,15 @@
                             Rédaction web <i class="fas fa-chevron-right icon"></i>
                         </h3>
                         <span class="slide-info-detail">
-                            Des mots qui comptent. Nos rédacteurs web créent un contenu pertinent, informatif et engageant qui communique efficacement votre message et améliore votre visibilité en ligne.
+                            Des mots qui comptent. Nos rédacteurs web créent un contenu pertinent, informatif et
+                            engageant qui communique efficacement votre message et améliore votre visibilité en ligne.
                         </span>
                     </a>
                 </div>
                 <div class="slide-expander"></div>
             </section>
         </section>
-        
+
         <section class="shock-section pt-4 pb-6 bg-color black">
             <div class="container">
                 <div class="row g-5">
@@ -237,34 +240,42 @@
                         <div class="gallery" data-lax="inertia-top">
                             <div class="row g-1">
                                 <div class="col-6">
-                                    <a href="<?= HOME_PATH ?>assets/img/a-1.png" class="item lightbox-link hover-opacity floating-item">
+                                    <a href="<?= HOME_PATH ?>assets/img/a-1.png"
+                                        class="item lightbox-link hover-opacity floating-item">
                                         <div class="image-wrapper">
                                             <div class="overlay has-border rounded white"></div>
-                                            <img src="<?= HOME_PATH ?>assets/img/a-1.png" class="image p-1 fit-cover" alt="Image du site test" />
+                                            <img src="<?= HOME_PATH ?>assets/img/a-1.png" class="image p-1 fit-cover"
+                                                alt="Image du site test" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?= HOME_PATH ?>assets/img/a-2.png" class="item lightbox-link hover-opacity">
+                                    <a href="<?= HOME_PATH ?>assets/img/a-2.png"
+                                        class="item lightbox-link hover-opacity">
                                         <div class="image-wrapper">
                                             <div class="overlay has-border rounded white"></div>
-                                            <img src="<?= HOME_PATH ?>assets/img/a-2.png"  class="image p-1 fit-cover" alt="Image du site test" />
+                                            <img src="<?= HOME_PATH ?>assets/img/a-2.png" class="image p-1 fit-cover"
+                                                alt="Image du site test" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?= HOME_PATH ?>assets/img/a-3.png" class="item lightbox-link hover-opacity">
+                                    <a href="<?= HOME_PATH ?>assets/img/a-3.png"
+                                        class="item lightbox-link hover-opacity">
                                         <div class="image-wrapper">
                                             <div class="overlay has-border rounded white"></div>
-                                            <img src="<?= HOME_PATH ?>assets/img/a-3.png" class="image p-1 fit-cover" alt="Image du site test" />
+                                            <img src="<?= HOME_PATH ?>assets/img/a-3.png" class="image p-1 fit-cover"
+                                                alt="Image du site test" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?= HOME_PATH ?>assets/img/a-4.png" class="item lightbox-link hover-opacity">
+                                    <a href="<?= HOME_PATH ?>assets/img/a-4.png"
+                                        class="item lightbox-link hover-opacity">
                                         <div class="image-wrapper">
                                             <div class="overlay has-border rounded white"></div>
-                                            <img src="<?= HOME_PATH ?>assets/img/a-4.png" class="image p-1 fit-cover" alt="Image du site test" />
+                                            <img src="<?= HOME_PATH ?>assets/img/a-4.png" class="image p-1 fit-cover"
+                                                alt="Image du site test" />
                                         </div>
                                     </a>
                                 </div>
@@ -281,14 +292,15 @@
                                     <span class="text-2 text-italic white">
                                         l'
                                         <mark class="animated-underline tertiary">
-                                        extraordinaire
+                                            extraordinaire
                                         </mark>
                                         .
                                     </span>
                                 </h2>
                                 <div class="description gray">
                                     <p>
-                                        Au cœur de notre engagement, réside la recherche incessante de l'extraordinaire, guidés par notre passion inébranlable pour l'excellence et l'innovation.
+                                        Au cœur de notre engagement, réside la recherche incessante de l'extraordinaire,
+                                        guidés par notre passion inébranlable pour l'excellence et l'innovation.
                                     </p>
                                 </div>
                             </div>
@@ -299,7 +311,11 @@
                                             <h3 class="title text-style-11 white">
                                                 Image de marque
                                             </h3>
-                                            <div class="counter outline" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--tertiary-color)" data-empty-bar-color="var(--gray-color)" data-text-bg-color="transparent" data-text-color="var(--gray-color)">
+                                            <div class="counter outline" data-value="100" data-symbol="%"
+                                                data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1"
+                                                data-bar-color="var(--tertiary-color)"
+                                                data-empty-bar-color="var(--gray-color)"
+                                                data-text-bg-color="transparent" data-text-color="var(--gray-color)">
                                             </div>
                                         </div>
                                     </div>
@@ -310,7 +326,11 @@
                                             <h3 class="title text-style-11 white">
                                                 Consultation
                                             </h3>
-                                            <div class="counter outline" data-value="87" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--tertiary-color)" data-empty-bar-color="var(--gray-color)" data-text-bg-color="transparent" data-text-color="var(--gray-color)">
+                                            <div class="counter outline" data-value="87" data-symbol="%"
+                                                data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1"
+                                                data-bar-color="var(--tertiary-color)"
+                                                data-empty-bar-color="var(--gray-color)"
+                                                data-text-bg-color="transparent" data-text-color="var(--gray-color)">
                                             </div>
                                         </div>
                                     </div>
@@ -321,7 +341,11 @@
                                             <h3 class="title text-style-11 white">
                                                 Développement
                                             </h3>
-                                            <div class="counter outline" data-value="92" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--tertiary-color)" data-empty-bar-color="var(--gray-color)" data-text-bg-color="transparent" data-text-color="var(--gray-color)">
+                                            <div class="counter outline" data-value="92" data-symbol="%"
+                                                data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1"
+                                                data-bar-color="var(--tertiary-color)"
+                                                data-empty-bar-color="var(--gray-color)"
+                                                data-text-bg-color="transparent" data-text-color="var(--gray-color)">
                                             </div>
                                         </div>
                                     </div>
@@ -333,43 +357,55 @@
             </div>
         </section>
 
-        <section class="shock-section pt-5 pb-4 bg-color black">
-            <div class="sticky-container">
-                <div class="scrollable-container">
-					<?php
-						foreach ($services as $key => $value) {
-					?>
-							<div class="scrollable-content" data-aos="fade-up" data-aos-delay="600">
-								<div class="card double-edge has-icon parent" style="height: 350px;ajustify-content: center;">
-									<div class="card-body">
-										<img class="card-image-icon primary" src="<?= HOME_PATH . 'assets/img/' . $value['icon'] . '.svg' ?>" alt="Icon"  data-shock-icon="32" />
-										<h3 class="title text-style-11 white">
-											<?= $value['title'] ?>
-										</h3>
-										<p class="description">
-											<?= $value['content'] ?>
-										</p>
-										<div class="button-wrapper align-h-right">
-											<span class="arrow-button cross scheme-2 primary">
-												<span class="arrow">
-													<span class="item"></span>
-													<span class="item"></span>
-												</span>
-												<span class="line"></span>
-												<span class="text">
-													VOIR PLUS
-												</span>
-											</span>
-										</div>
-									</div>
-									<a href="<?= HOME_PATH ?>nous-contacter" class="full-link">
-										<div class="overlay gray-25 magnetic-effect"></div>
-									</a>
-								</div>
-							</div>
-					<?php
-						}
-					?>
+        <section class="shock-section bg-color black">
+            <div class="scrolling-text">
+                <div class="text-wrapper mix-blend-lighter">
+                    <?php
+                        foreach ($textes as $key => $value) {
+                    ?>
+                            <div class="row">
+                                <div class="col-12 col-md-7 align-v-center" data-lax="h-left">
+                                    <div class="holder">
+                                        <div class="basic-intro">
+                                            <h2 class="title white">
+                                                <span class="text-1 text-style-5">
+                                                    <?= $value['title'] ?>
+                                                </span>
+                                            </h2>
+                                            <div class="description white">
+                                                <p>
+                                                    <?= $value['texte'] ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr class="gray-25">
+                                        <figure class="blockquote">
+                                            <blockquote class="blockquote-body text-style-11 white">
+                                                <p>
+                                                    "<?= $value['citation'] ?>".
+                                                </p>
+                                            </blockquote>
+                                            <figcaption class="blockquote-footer">
+                                                <cite title="Source Title">
+                                                    <?= $value['autor'] ?>
+                                                </cite>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <div class="gallery" data-lax="inertia-top">
+                                        <a href="<?= $value['img'] ?>" class="item active lightbox-link">
+                                            <div class="image-wrapper shadow rounded">
+                                                <img src="<?= $value['img'] ?>" class="image" alt="Image"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
         </section>
@@ -381,7 +417,8 @@
                         <span class="text-1 text-outline white-75">
                             Choisissez votre
                         </span>
-                        <span class="text-2 text-italic white">nouveau <mark class="animated-underline tertiary">plan de consultation</mark>.</span>
+                        <span class="text-2 text-italic white">nouveau <mark class="animated-underline tertiary">plan de
+                                consultation</mark>.</span>
                     </h2>
                     <div class="description">
                         <div class="form-area scheme-2 tertiary">
@@ -390,7 +427,8 @@
                                     Annuel
                                 </label>
                                 <div class="form-check form-switch">
-                                    <input type="checkbox" class="form-check-input form-switch js-switch-price-button" checked="checked">
+                                    <input type="checkbox" class="form-check-input form-switch js-switch-price-button"
+                                        checked="checked">
                                 </div>
                                 <label class="form-label">
                                     Mensuel
@@ -410,12 +448,13 @@
                                     <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
                                 </h3>
                                 <div class="price-wrapper">
-                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="45" data-monthly="20">20</span>
+                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="45"
+                                        data-monthly="20">20</span>
                                     <span class="billing text-style-7 text-outline gray-75">
                                         k/mo
                                     </span>
                                     <sup class="currency text-style-7 text-outline gray-75">
-                                         FCFA
+                                        FCFA
                                     </sup>
                                 </div>
                             </div>
@@ -425,31 +464,39 @@
                                         <span class="text">
                                             Gestion des réseaux sociaux
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Campagne publicitaire
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Création de vue
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Site web
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
+                                            alt="Icon" data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Assistance journalière
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
+                                            alt="Icon" data-shock-icon="32" />
                                     </li>
                                 </ul>
                                 <div class="button-wrapper align-h-right">
@@ -485,7 +532,8 @@
                                     <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
                                 </h3>
                                 <div class="price-wrapper">
-                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="55" data-monthly="30">
+                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="55"
+                                        data-monthly="30">
                                         30
                                     </span>
                                     <span class="billing text-style-7 text-outline gray-75">
@@ -502,31 +550,40 @@
                                         <span class="text">
                                             Gestion des réseaux sociaux
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Campagne publicitaire
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Création de vue
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Site web
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Assistance journalière
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
+                                            alt="Icon" data-shock-icon="32" />
                                     </li>
                                 </ul>
                                 <div class="button-wrapper align-h-right">
@@ -556,7 +613,8 @@
                                     <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
                                 </h3>
                                 <div class="price-wrapper">
-                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="65" data-monthly="40">
+                                    <span class="price text-style-3 tertiary hover-up-down" data-annual="65"
+                                        data-monthly="40">
                                         40
                                     </span>
                                     <span class="billing text-style-7 text-outline gray-75">
@@ -573,31 +631,41 @@
                                         <span class="text">
                                             Gestion des réseaux sociaux
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Campagne publicitaire
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Création de vue
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Site web
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">
                                             Assistance journalière
                                         </span>
-                                        <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon" data-shock-icon="32" />
+                                        <img class="image-icon white"
+                                            src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
+                                            data-shock-icon="32" />
                                     </li>
                                 </ul>
                                 <div class="button-wrapper align-h-right">
@@ -620,7 +688,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="shock-section has-overlay pt-5 pb-5 bg-image bg-fixed"
             data-bg-image="assets/images/jpg/b-17.jpg">
             <div class="container max-w-85">
@@ -654,7 +722,7 @@
             </div>
             <div class="overlay black-75"></div>
         </section>
-        
+
         <section class="shock-section pt-6 pb-6 bg-color black">
             <div class="container">
                 <div id="load-more" class="row g-4" data-display="6" data-columns="3">
@@ -663,55 +731,57 @@
                             $n = $key + 1;
                             $q = $key + 5;
                     ?>
-                            <div class="col-12 col-md-6 col-lg-4 load-more-item"<?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
-                                <div class="card parent" data-bg-color="#1e1e24">
-                                    <?php
+                    <div class="col-12 col-md-6 col-lg-4 load-more-item"
+                        <?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
+                        <div class="card parent" data-bg-color="#1e1e24">
+                            <?php
                                         if ( $key == 0 ) {
                                     ?>
-                                            <div class="sticky-post-icon white-10">
-                                                <i class="fas fa-thumbtack icon tertiary"></i>
-                                            </div>
-                                    <?php
+                            <div class="sticky-post-icon white-10">
+                                <i class="fas fa-thumbtack icon tertiary"></i>
+                            </div>
+                            <?php
                                         }
                                     ?>
-                                    <span class="label-vertical to-bottom-right-out hover-show">
-                                        <span class="label-line gray"></span>
-                                        <span class="label-text gray">
-                                            <i class="icon fas fa-user-circle"></i>
-                                            Par Prince Steve
+                            <span class="label-vertical to-bottom-right-out hover-show">
+                                <span class="label-line gray"></span>
+                                <span class="label-text gray">
+                                    <i class="icon fas fa-user-circle"></i>
+                                    Par Prince Steve
+                                </span>
+                            </span>
+                            <div class="card-body">
+                                <h3 class="title text-style-11 white">
+                                    <?= $value['title'] ?>
+                                </h3>
+                                <p class="description">
+                                    <?= $value['content'] ?>
+                                </p>
+                                <hr class="gray-10">
+                                <div class="tag-cloud">
+                                    <a class="link">
+                                        <span class="badge outline gray-50 tertiary-hover">
+                                            <span class="badge-text gray white-hover">
+                                                16/08/2023
+                                            </span>
                                         </span>
-                                    </span>
-                                    <div class="card-body">
-                                        <h3 class="title text-style-11 white">
-                                            <?= $value['title'] ?>
-                                        </h3>
-                                        <p class="description">
-                                            <?= $value['content'] ?>
-                                        </p>
-                                        <hr class="gray-10">
-                                        <div class="tag-cloud">
-                                            <a class="link">
-                                                <span class="badge outline gray-50 tertiary-hover">
-                                                    <span class="badge-text gray white-hover">
-                                                        16/08/2023
-                                                    </span>
-                                                </span>
-                                            </a>
-                                            <a class="link">
-                                                <span class="badge outline gray-50 tertiary-hover">
-                                                    <span class="badge-text gray white-hover">
-                                                        <?= APP_NAME ?>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    
-                                    <a class="full-link">
-                                        <div class="overlay shadow magnetic-effect hover-show bg-image" data-bg-image="<?= HOME_PATH ?>assets/img/a-<?= $q ?>.jpg"></div>
+                                    </a>
+                                    <a class="link">
+                                        <span class="badge outline gray-50 tertiary-hover">
+                                            <span class="badge-text gray white-hover">
+                                                <?= APP_NAME ?>
+                                            </span>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
+
+                            <a class="full-link">
+                                <div class="overlay shadow magnetic-effect hover-show bg-image"
+                                    data-bg-image="<?= HOME_PATH ?>assets/img/a-<?= $q ?>.jpg"></div>
+                            </a>
+                        </div>
+                    </div>
                     <?php
                         }
                     ?>
@@ -729,17 +799,5 @@
     </main>
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/footer.php'; ?>
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/script.php'; ?>
-    <script>
-        const element = document.querySelector(".scrollable-container");
-
-        element.addEventListener('wheel', (event) => {
-            event.preventDefault();
-
-            element.scrollBy({
-                left: event.deltaY < 0 ? -30 : 30,
-                
-            });
-        });
-    </script>
 </body>
 </html>
