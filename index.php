@@ -67,5 +67,5 @@
         $page_not_found = TRUE;
     }
     if ( isset($page_not_found) AND $page_not_found ) {
-        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content/404.php';
+        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content/index.php';
     }
