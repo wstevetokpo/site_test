@@ -107,22 +107,22 @@
                             </span>
                         </div>
                         <div class="menu-grid-minor">
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Création de site
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Marketing digital
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Design Graphique
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Rédaction web
                                 </span>

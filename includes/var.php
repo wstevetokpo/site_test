@@ -16,16 +16,22 @@
 	}
 
 	$ip = $_SERVER['REMOTE_ADDR'];
-
-	$apiUrl = "http://ipinfo.io/{$ip}/json";
-	
-	$response = file_get_contents($apiUrl);
 	$countryCode = 'US';
-	if ( $response !== FALSE ) {
-		$data = json_decode($response, true);
-		if ( isset($data['country']) AND strlen($data['country']) <= 2 ) {
-			$countryCode = $data['country'];
-		}	
+	$apiUrl = "http://ipinfo.io/{$ip}/json";
+
+	
+	try {
+		$response = file_get_contents($apiUrl);
+		
+		if ( $response !== FALSE ) {
+			$data = json_decode($response, true);
+			if ( isset($data['country']) AND strlen($data['country']) <= 2 ) {
+				$countryCode = $data['country'];
+			}	
+		}
+	}
+	catch (Exception $e) {
+
 	}
 	function isMobileDevice() {
 		$userAgent = $_SERVER['HTTP_USER_AGENT'];

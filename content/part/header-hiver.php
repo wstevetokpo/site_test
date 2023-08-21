@@ -53,14 +53,14 @@
                             </span>
                         </div>
                         <div class="menu-grid-main">
-                            <a href="<?= HOME_PATH ?>a-propos" class="menu-grid-main-item menu-item">
-                                A propos
+                            <a href="<?= HOME_PATH ?>" class="menu-grid-main-item menu-item">
+                                Mode clair
                             </a>
-                            <a href="<?= HOME_PATH ?>nos-services" class="menu-grid-main-item menu-item">
-                                Services
+                            <a href="<?= HOME_PATH . '?theme=sombre' ?>" class="menu-grid-main-item menu-item">
+                                Mode sombre
                             </a>
-                            <a href="<?= HOME_PATH ?>nous-contacter" class="menu-grid-main-item menu-item">
-                                Contacts
+                            <a href="<?= HOME_PATH . '?theme=hiver' ?>" class="menu-grid-main-item menu-item">
+                                Mode hiver
                             </a>
                         </div>
                         <div class="menu-grid-search focus-trigger">
@@ -103,22 +103,22 @@
                             </span>
                         </div>
                         <div class="menu-grid-minor">
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Création de site
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Marketing digital
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Design Graphique
                                 </span>
                             </a>
-                            <a href="#your-link" class="menu-grid-minor-item menu-item">
+                            <a class="menu-grid-minor-item menu-item">
                                 <span class="menu-grid-minor-item-inner">
                                     Rédaction web
                                 </span>

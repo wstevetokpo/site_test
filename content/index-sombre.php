@@ -21,10 +21,10 @@
                     </div>
                 </div>
                 <div class="gallery mt-3">
-                    <a href="<?= HOME_PATH ?>assets/img/c-22.png"
-                        class="button outline lightbox-link white tertiary-hover magnetic-effect">
+                    <a href="<?= HOME_PATH . "?theme=hiver" ?>"
+                        class="button outline white tertiary-hover magnetic-effect">
                         <span class="button-text white white-hover">
-                            En savoir plus
+                            Voir le mode hiver
                         </span>
                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                     </a>
