@@ -1,3 +1,8 @@
+<?php
+
+    $she = isset($she) ? $she: 'tertiary';
+
+?>
 <div class="form-row row">
     <div class="form-col form-floating col-12 col-md-6">
         <input type="text" id="nl_nom" class="form-control" placeholder="John">
@@ -14,20 +19,7 @@
 </div>
 <div class="form-row row">
     <div class="form-col col-12">
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" required>
-            <label class="form-label form-check-label">
-                J'accepte les
-                <a class="link white  tertiary-hover">
-                    <u>conditions d'utilisation</u>.
-                </a>
-            </label>
-        </div>
-    </div>
-</div>
-<div class="form-row row">
-    <div class="form-col col-12">
-        <button type="submit" id="nl_submit" class="button arrow-button next scheme-2 tertiary">
+        <button type="submit" id="nl_submit" class="button arrow-button next scheme-2 <?= $she ?>">
             <span class="arrow">
                 <span class="item"></span>
                 <span class="item"></span>

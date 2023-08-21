@@ -85,10 +85,10 @@
                             </div>
                         </div>
                         <div class="gallery mt-3">
-                            <a href="<?= HOME_PATH . "?theme=hiver" ?>"
+                            <a href="<?= HOME_PATH . "?theme=summer" ?>"
                                 class="button outline white tertiary-hover magnetic-effect">
                                 <span class="button-text white white-hover">
-                                    Voir le mode hiver
+                                    Voir le mode summer
                                 </span>
                                 <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                             </a>
@@ -215,7 +215,45 @@
                 </section>
             </section>
         <?php } else { ?>
-        
+            <section id="home" class="shock-section has-overlay" style="height: 100vh !important">
+                <div class="banner" style="height: 100vh !important">
+                    <div class="content-wrapper text-center">
+                        <div class="basic-intro mb-35">
+                            <h2 class="title text-style-5">
+                                <span class="text-1 text-outline white-75">
+                                    Un endroit pur
+                                </span>
+                                <span class="text-2 text-italic white">
+                                    pour trouver <mark class="animated-underline <?= $she ?>"> les meilleurs services</mark>.
+                                </span>
+                            </h2>
+                            <div class="description white-50">
+                                <p>
+                                    Notre mission est de fournir à nos clients des produits qui transformeront la manière
+                                    dont les gens voient le monde.<br>
+                                    Transformer une idée en quelque chose qui fonctionne, voilà ce qui nous anime.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery mt-3">
+                            <a href="<?= HOME_PATH . "?theme=winter" ?>"
+                                class="button outline white <?= $she ?>-hover magnetic-effect">
+                                <span class="button-text white white-hover">
+                                    Voir le mode hiver
+                                </span>
+                                <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-wrapper" style="height: 100vh !important">
+                        <video class="video vh-75 fit-cover" style="height: 100vh !important" playsinline="playsinline"
+                            autoplay="autoplay" muted="muted" loop="loop">
+                            <source src="<?= HOME_PATH ?>assets/vid/b-29.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="overlay black-50"></div>
+                </div>
+            </section>
             <section id="home" class="shock-section dynamic-slider scheme-1" data-autoplay="10000">
                 <div id="slide-index" class="slide-index">
                     <span class="slide-index-current">
@@ -995,90 +1033,162 @@
         <?php } ?>
 
         <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/newsletter.php'; ?>
+        <?php
+            if ( $__theme === 'dark' ) {
+        ?>
+                <section class="shock-section pt-6 pb-6 bg-color black">
+                    <div class="container">
+                        <div id="load-more" class="row g-4" data-display="6" data-columns="3">
+                            <?php
+                                foreach ($blog as $key => $value) {
+                                    $n = $key + 1;
+                                    $q = $key + 5;
+                            ?>
+                            <div class="col-12 col-md-6 col-lg-4 load-more-item"
+                                <?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
+                                <div class="card parent" data-bg-color="#1e1e24">
+                                    <?php
+                                                if ( $key == 0 ) {
+                                            ?>
+                                    <div class="sticky-post-icon white-10">
+                                        <i class="fas fa-thumbtack icon tertiary"></i>
+                                    </div>
+                                    <?php
+                                                }
+                                            ?>
+                                    <span class="label-vertical to-bottom-right-out hover-show">
+                                        <span class="label-line gray"></span>
+                                        <span class="label-text gray">
+                                            <i class="icon fas fa-user-circle"></i>
+                                            Par Prince Steve
+                                        </span>
+                                    </span>
+                                    <div class="card-body">
+                                        <h3 class="title text-style-11 white">
+                                            <?= $value['title'] ?>
+                                        </h3>
+                                        <p class="description">
+                                            <?= $value['content'] ?>
+                                        </p>
+                                        <hr class="gray-10">
+                                        <div class="tag-cloud">
+                                            <a class="link">
+                                                <span class="badge outline gray-50 tertiary-hover">
+                                                    <span class="badge-text gray white-hover">
+                                                        16/08/2023
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a class="link">
+                                                <span class="badge outline gray-50 tertiary-hover">
+                                                    <span class="badge-text gray white-hover">
+                                                        <?= APP_NAME ?>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
 
-        <section class="shock-section pt-6 pb-6 bg-color <?php if ( $__theme === 'dark' ) { echo 'black'; }else { echo 'white'; } ?>">
-            <div class="container">
-                <div id="load-more" class="row g-4" data-display="6" data-columns="3">
-                    <?php
-                        foreach ($blog as $key => $value) {
-                            $n = $key + 1;
-                            $q = $key + 5;
-                    ?>
-                    <div class="col-12 col-md-6 col-lg-4 load-more-item"
-                        <?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
-                        <?php if ( $__theme === 'dark' ) { ?><div class="card parent" data-bg-color="#1e1e24"><? }else { echo '<div class="card outline parent bg-color gray-10">'; } ?>
-                            <?php
-                                if ( $key == 0 ) {
-                            ?>
-                                <div class="sticky-post-icon white-10">
-                                    <i class="fas fa-thumbtack icon <?php switch ($__theme) {
-                                        case 'summer':
-                                            echo 'accent';
-                                        break;
-                                        case 'winter':
-                                            echo 'secondary-50';
-                                        break;
-                                        default:
-                                            echo 'tertiary';
-                                        break;
-                                    } ?>"></i>
-                                </div>
-                            <?php
-                                }
-                            ?>
-                            <span class="label-vertical to-bottom-right-out hover-show">
-                                <span class="label-line gray"></span>
-                                <span class="label-text gray">
-                                    <i class="icon fas fa-user-circle"></i>
-                                    Par Prince Steve
-                                </span>
-                            </span>
-                            <div class="card-body">
-                                <h3 class="title text-style-11 white">
-                                    <?= $value['title'] ?>
-                                </h3>
-                                <p class="description">
-                                    <?= $value['content'] ?>
-                                </p>
-                                <hr class="gray-10">
-                                <div class="tag-cloud">
-                                    <a class="link">
-                                        <span class="badge outline gray-50 tertiary-hover">
-                                            <span class="badge-text gray white-hover">
-                                                16/08/2023
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="link">
-                                        <span class="badge outline gray-50 tertiary-hover">
-                                            <span class="badge-text gray white-hover">
-                                                <?= APP_NAME ?>
-                                            </span>
-                                        </span>
+                                    <a class="full-link">
+                                        <div class="overlay shadow magnetic-effect hover-show bg-image"
+                                            data-bg-image="<?= HOME_PATH ?>assets/img/a-<?= $q ?>.jpg"></div>
                                     </a>
                                 </div>
                             </div>
-
-                            <a class="full-link">
-                                <div class="overlay shadow magnetic-effect hover-show bg-image"
-                                    data-bg-image="<?= HOME_PATH ?>assets/img/a-<?= $q ?>.jpg"></div>
-                            </a>
+                            <?php
+                                }
+                            ?>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button id="load-more-button" class="button outline white tertiary-hover magnetic-effect">
+                                <span class="button-text white white-hover">
+                                    Charger plus
+                                </span>
+                                <i class="fa-solid fa-arrow-rotate-right button-icon white white-hover"></i>
+                            </button>
                         </div>
                     </div>
-                    <?php
-                        }
-                    ?>
-                </div>
-                <div class="mt-4 text-center">
-                    <button id="load-more-button" class="button outline white tertiary-hover magnetic-effect">
-                        <span class="button-text white white-hover">
-                            Charger plus
-                        </span>
-                        <i class="fa-solid fa-arrow-rotate-right button-icon white white-hover"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
+                </section>
+        <?php
+            }
+            else {
+        ?>
+                <section class="shock-section pt-6 pb-6 bg-color white">
+                    <div class="container">
+                        <div id="load-more" class="row g-4" data-display="6" data-columns="3">
+                            <?php
+                                foreach ($blog as $key => $value) {
+                                    $n = $key + 1;
+                                    $q = $key + 5;
+                            ?>
+                            <div class="col-12 col-md-6 col-lg-4 load-more-item"
+                                <?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
+                                <div class="card outline parent bg-color gray-10">
+                                    <?php
+                                                if ( $key == 0 ) {
+                                            ?>
+                                    <div class="sticky-post-icon white-10">
+                                        <i class="fas fa-thumbtack icon <?= $she ?>"></i>
+                                    </div>
+                                    <?php
+                                                }
+                                            ?>
+                                    <span class="label-vertical to-bottom-right-out hover-show">
+                                        <span class="label-line gray"></span>
+                                        <span class="label-text gray">
+                                            <i class="icon fas fa-user-circle"></i>
+                                            Par Prince Steve
+                                        </span>
+                                    </span>
+                                    <div class="card-body">
+                                        <h3 class="title text-style-11 black">
+                                            <?= $value['title'] ?>
+                                        </h3>
+                                        <p class="description">
+                                            <?= $value['content'] ?>
+                                        </p>
+                                        <hr class="gray-10">
+                                        <div class="tag-cloud">
+                                            <a class="link">
+                                                <span class="badge outline gray-50 <?= $she ?>-hover">
+                                                    <span class="badge-text gray black-hover">
+                                                        16/08/2023
+                                                    </span>
+                                                </span>
+                                            </a>
+                                            <a class="link">
+                                                <span class="badge outline gray-50 <?= $she ?>-hover">
+                                                    <span class="badge-text gray black-hover">
+                                                        <?= APP_NAME ?>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <a class="full-link">
+                                        <div class="overlay shadow magnetic-effect hover-show bg-image"
+                                            data-bg-image="<?= HOME_PATH ?>assets/img/a-<?= $q ?>.jpg"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <?php
+                                }
+                            ?>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button id="load-more-button" class="button outline white <?= $she ?>-hover magnetic-effect">
+                                <span class="button-text black black-hover">
+                                    Charger plus
+                                </span>
+                                <i class="fa-solid fa-arrow-rotate-right button-icon black black-hover"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+        <?php
+            }
+        ?>
     </main>
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/footer.php'; ?>
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/script.php'; ?>

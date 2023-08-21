@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<footer id="footer" class="shock-footer scheme-1 primary">
+<footer id="footer" <?php if ( $__theme === 'dark' )  {echo 'class="shock-footer scheme-1 primary"'; }  else { echo 'class="shock-footer scheme-2 <?= $she ?> bg-color white"'; } ?>>
     <div class="footer-content focus-trigger">
         <div class="container">
             <div class="row g-3">
@@ -160,14 +160,32 @@
                         </ul>
                     </div>
                     <div class="footer-item">
-                        <a href="<?= HOME_PATH ?>nos-services" class="button outline gray primary-hover">
-                            <span class="hover-rotate">
-                                <span class="button-text white white-hover">
-                                    Commander
-                                </span>
-                                <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
-                            </span>
-                        </a>
+                        <?php
+                            if ( $__theme === 'dark' ) {
+                        ?>
+                                <a href="<?= HOME_PATH ?>nos-services" class="button outline gray primary-hover">
+                                    <span class="hover-rotate">
+                                        <span class="button-text white white-hover">
+                                            Commander
+                                        </span>
+                                        <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+                                    </span>
+                                </a>
+                        <?php
+                            }
+                            else {
+                        ?>
+                                <a href="<?= HOME_PATH ?>nos-services" class="button outline gray <?= $she ?>-hover">
+                                    <span class="hover-rotate">
+                                        <span class="button-text black black-hover">
+                                            Commander
+                                        </span>
+                                        <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                    </span>
+                                </a>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
@@ -234,7 +252,7 @@
             </div>
         </div>
     </div>
-    <div class="bottom-bar" data-bg-color="#1e1e24">
+    <div class="bottom-bar <?php if ( $__theme !== 'dark' ) { echo 'bg-color gray-10'; } ?>"<?php  if ( $__theme === 'dark' ) { echo 'data-bg-color="#1e1e24"'; } ?>>
         <div class="text">
             &copy; date('Y') - Tous les droits sont réservés. Le <a href="<?= HOME_PATH ?>"
                 class="link gray primary-hover"><u><?= APP_NAME ?></u></a> est conçu uniquement pour but de tester par
