@@ -60,12 +60,12 @@
 
     require __DIR__ . DIRECTORY_SEPARATOR . 'includes/lang.' . $requestLang . '.php';
 
-    if ( file_exists('content/'. $requestPage . '.php') ) {
-        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content/'. $requestPage . '.php';
+    if ( file_exists('content1/'. $requestPage . '.php') ) {
+        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content1/'. $requestPage . '.php';
     }
     else {
         $page_not_found = TRUE;
     }
     if ( isset($page_not_found) AND $page_not_found ) {
-        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content/index.php';
+        include_once __DIR__ . DIRECTORY_SEPARATOR . 'content1/index.php';
     }

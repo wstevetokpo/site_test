@@ -15,9 +15,9 @@
 		$visitorCookie = $_COOKIE['token'];
 	}
 
-	$ip = $_SERVER['REMOTE_ADDR'];
+	// $ip = $_SERVER['REMOTE_ADDR'];
 	$countryCode = 'US';
-	$apiUrl = "http://ipinfo.io/{$ip}/json";
+	/* $apiUrl = "http://ipinfo.io/{$ip}/json";
 
 	
 	try {
@@ -32,7 +32,7 @@
 	}
 	catch (Exception $e) {
 
-	}
+	} */
 	function isMobileDevice() {
 		$userAgent = $_SERVER['HTTP_USER_AGENT'];
 		

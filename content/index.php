@@ -50,14 +50,6 @@
 <html lang="<?= $requestLang ?>">
 <?php $page_title = 'Acceuil du site test'; $page_md = 'Découvrez notre petite start-up digital' ?>
 <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/head.php'; ?>
-<?php
-    if ( $__theme === 'hiver' ) {
-?>
-        <link rel="stylesheet" href="<?= HOME_PATH ?>assets/css/snow.css">
-        <script src="<?= HOME_PATH ?>assets/js/snow.js" defer></script>
-<?php
-    }
-?>
 <body class="shock-body">
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'index-' . $__theme . '.php'; ?>
     <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/script.php'; ?>
