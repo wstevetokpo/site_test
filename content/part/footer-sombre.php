@@ -90,11 +90,11 @@
                         </h6>
                         <ul class="nav-list list-unstyled">
                             <li class="nav-item">
-                                <a href="tel:+19912345678" class="nav-link has-icon">
+                                <a href="tel:<?= PHONE ?>" class="nav-link has-icon">
                                     <img class="image-icon" src="<?= HOME_PATH ?>assets/img/call-sharp.svg" alt="Icon"
                                         data-shock-icon="32" />
                                     <span class="text">
-                                        +229 61 04 50 91
+                                        <?= PHONE ?>
                                     </span>
                                     <span class="badge flex ms-1 primary primary-hover">
                                         <span class="badge-text white white-hover">
@@ -104,11 +104,11 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="mailto:dev.stevetokpo@gmail.com" class="nav-link has-icon">
+                                <a href="mailto:<?= DEV_EMAIL ?>" class="nav-link has-icon">
                                     <img class="image-icon" src="<?= HOME_PATH ?>assets/img/mail-sharp.svg" alt="Icon"
                                         data-shock-icon="32" />
                                     <span class="text">
-                                        dev.stevetokpo@gmail.com
+                                        <?= DEV_EMAIL ?>
                                     </span>
                                 </a>
                             </li>

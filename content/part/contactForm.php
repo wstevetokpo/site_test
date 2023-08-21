@@ -34,6 +34,9 @@
         </div>
     </div>
 </div>
+<?php
+    if ( $__theme === 'sombre' ) {
+?>
 <div class="form-col col-12 col-md-4 align-h-right">
     <button type="submit" id="cf_submit" class="button outline white tertiary-hover magnetic-effect">
         <span class="button-text white white-hover">
@@ -42,5 +45,20 @@
         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
     </button>
 </div>
+<?php
+    }
+    else {
+?>
+<div class="form-col col-12 col-md-4 align-h-right">
+    <button type="submit" id="cf_submit" class="button outline black primary-hover magnetic-effect">
+        <span class="button-text black black-hover">
+            Soumettre
+        </span>
+        <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+    </button>
+</div>
+<?php
+    }
+?>
 <!-- <span class="form-alert success">Your message was sent successful. Thanks.</span>
 <span class="form-alert error">Sorry. We were unable to send your message.</span> -->

@@ -377,320 +377,9 @@
         </div>
     </section>
 
-    <section class="shock-section pt-6 pb-6 bg-color white js-switch-price">
-        <div class="container">
-            <div class="basic-intro mb-35 text-center">
-                <h2 class="title text-style-5">
-                    <span class="text-1 text-outline black-75">
-                        Choisissez votre
-                    </span>
-                    <span class="text-2 text-italic black">nouveau <mark class="animated-underline tertiary">plan de
-                            consultation</mark>.</span>
-                </h2>
-                <div class="description">
-                    <div class="form-area scheme-2 tertiary">
-                        <div class="plan-switcher">
-                            <label class="form-label">
-                                Annuel
-                            </label>
-                            <div class="form-check form-switch">
-                                <input type="checkbox" class="form-check-input form-switch js-switch-price-button"
-                                    checked="checked">
-                            </div>
-                            <label class="form-label">
-                                Mensuel
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card outline has-price parent">
-                        <div class="card-header pb-0 text-center">
-                            <h3 class="title m-0 text-style-11 text-italic black">
-                                <span class="bg-color white">
-                                    BASIQUE
-                                </span>
-                                <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
-                            </h3>
-                            <div class="price-wrapper">
-                                <span class="price text-style-3 tertiary hover-up-down" data-annual="45"
-                                    data-monthly="20">20</span>
-                                <span class="billing text-style-7 text-outline gray-75">
-                                    k/mo
-                                </span>
-                                <sup class="currency text-style-7 text-outline gray-75">
-                                    FCFA
-                                </sup>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="checklist">
-                                <li class="item">
-                                    <span class="text">
-                                        Gestion des réseaux sociaux
-                                    </span>
-                                    <img class="image-icon black"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Campagne publicitaire
-                                    </span>
-                                    <img class="image-icon black"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Création de vue
-                                    </span>
-                                    <img class="image-icon black"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Site web
-                                    </span>
-                                    <img class="image-icon black" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
-                                        alt="Icon" data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Assistance journalière
-                                    </span>
-                                    <img class="image-icon black" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
-                                        alt="Icon" data-shock-icon="32" />
-                                </li>
-                            </ul>
-                            <div class="button-wrapper align-h-right">
-                                <span class="button arrow-button next scheme-2 tertiary">
-                                    <span class="arrow">
-                                        <span class="item"></span>
-                                        <span class="item"></span>
-                                    </span>
-                                    <span class="line"></span>
-                                    <span class="text">
-                                        COMMENCER
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
-                        <div class="overlay tertiary-25"></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card outline has-price parent">
-                        <span class="label-vertical to-bottom-left-out">
-                            <span class="label-line gray"></span>
-                            <span class="label-text gray">
-                                PLUS CHOISIS
-                            </span>
-                        </span>
-                        <div class="card-header pb-0 text-center">
-                            <h3 class="title m-0 text-style-11 text-italic black">
-                                <span class="bg-color black">
-                                    STANDARD
-                                </span>
-                                <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
-                            </h3>
-                            <div class="price-wrapper">
-                                <span class="price text-style-3 tertiary hover-up-down" data-annual="55"
-                                    data-monthly="30">
-                                    30
-                                </span>
-                                <span class="billing text-style-7 text-outline gray-75">
-                                    k/mo
-                                </span>
-                                <sup class="currency text-style-7 text-outline gray-75">
-                                    FCFA
-                                </sup>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="checklist">
-                                <li class="item">
-                                    <span class="text">
-                                        Gestion des réseaux sociaux
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Campagne publicitaire
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Création de vue
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Site web
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Assistance journalière
-                                    </span>
-                                    <img class="image-icon white" src="<?= HOME_PATH ?>assets/img/close-outline.svg"
-                                        alt="Icon" data-shock-icon="32" />
-                                </li>
-                            </ul>
-                            <div class="button-wrapper align-h-right">
-                                <span class="button arrow-button next scheme-2 tertiary">
-                                    <span class="arrow">
-                                        <span class="item"></span>
-                                        <span class="item"></span>
-                                    </span>
-                                    <span class="line"></span>
-                                    <span class="text">
-                                        COMMENCER
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
-                        <div class="overlay tertiary-25"></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card outline has-price parent">
-                        <div class="card-header pb-0 text-center">
-                            <h3 class="title m-0 text-style-11 text-italic white">
-                                <span class="bg-color black">
-                                    PREMIUM
-                                </span>
-                                <span class="zzz mt-1 mb-1 scheme-2 gray"></span>
-                            </h3>
-                            <div class="price-wrapper">
-                                <span class="price text-style-3 tertiary hover-up-down" data-annual="65"
-                                    data-monthly="40">
-                                    40
-                                </span>
-                                <span class="billing text-style-7 text-outline gray-75">
-                                    k/mo
-                                </span>
-                                <sup class="currency text-style-7 text-outline gray-75">
-                                    FCFA
-                                </sup>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="checklist">
-                                <li class="item">
-                                    <span class="text">
-                                        Gestion des réseaux sociaux
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Campagne publicitaire
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Création de vue
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Site web
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                                <li class="item">
-                                    <span class="text">
-                                        Assistance journalière
-                                    </span>
-                                    <img class="image-icon white"
-                                        src="<?= HOME_PATH ?>assets/img/checkmark-outline.svg" alt="Icon"
-                                        data-shock-icon="32" />
-                                </li>
-                            </ul>
-                            <div class="button-wrapper align-h-right">
-                                <span class="button arrow-button next scheme-2 tertiary">
-                                    <span class="arrow">
-                                        <span class="item"></span>
-                                        <span class="item"></span>
-                                    </span>
-                                    <span class="line"></span>
-                                    <span class="text">
-                                        COMMENCER
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <a href="<?= HOME_PATH ?>nos-services" class="full-link"></a>
-                        <div class="overlay tertiary-25"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/newsletter.php'; ?>
 
-    <section class="shock-section has-overlay pt-5 pb-5 bg-image bg-fixed"
-        data-bg-image="assets/images/jpg/b-17.jpg">
-        <div class="container max-w-85">
-            <div class="row">
-                <div class="col-12 col-md-6 align-h-center align-v-center">
-                    <div class="side-intro">
-                        <h2 class="title text-style-5">
-                            <span class="text-1 text-outline white-75">
-                                Inscrivez-vous maintenant
-                            </span>
-                            <span class="text-2 text-italic white">
-                                à notre <mark class="animated-underline tertiary">newsletter</mark>!
-                            </span>
-                        </h2>
-                        <div class="description gray">
-                            <p>
-                                Abonnez-vous à notre newsletter et suivez attentivement nos contens.<br>
-                                Recevez des actualités en fonction de ce qui vous concerne.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 align-h-center align-v-center">
-                    <div class="form-area scheme-2 tertiary">
-                        <form onsubmit="return nl_form()" id="nl_form" class="form-fields needs-validation">
-                            <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/nlForm.php'; ?>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="overlay black-75"></div>
-    </section>
-
-    <section class="shock-section pt-6 pb-6 bg-color black">
+    <section class="shock-section pt-6 pb-6 bg-color white">
         <div class="container">
             <div id="load-more" class="row g-4" data-display="6" data-columns="3">
                 <?php
@@ -700,13 +389,13 @@
                 ?>
                 <div class="col-12 col-md-6 col-lg-4 load-more-item"
                     <?php if ( $key <= 5 ) { echo ' data-aos="fade-up" data-aos-delay="' . $n * 100 . '"'; } ?>>
-                    <div class="card parent" data-bg-color="#1e1e24">
+                    <div class="card outline parent bg-color gray-10">
                         <?php
                                     if ( $key == 0 ) {
                                 ?>
-                        <div class="sticky-post-icon white-10">
-                            <i class="fas fa-thumbtack icon tertiary"></i>
-                        </div>
+                            <div class="sticky-post-icon primary">
+                                <i class="fas fa-thumbtack icon white"></i>
+                            </div>
                         <?php
                                     }
                                 ?>
@@ -718,7 +407,7 @@
                             </span>
                         </span>
                         <div class="card-body">
-                            <h3 class="title text-style-11 white">
+                            <h3 class="title text-style-11 black">
                                 <?= $value['title'] ?>
                             </h3>
                             <p class="description">
@@ -727,14 +416,14 @@
                             <hr class="gray-10">
                             <div class="tag-cloud">
                                 <a class="link">
-                                    <span class="badge outline gray-50 tertiary-hover">
+                                    <span class="badge outline gray-50 primary-hover">
                                         <span class="badge-text gray white-hover">
                                             16/08/2023
                                         </span>
                                     </span>
                                 </a>
                                 <a class="link">
-                                    <span class="badge outline gray-50 tertiary-hover">
+                                    <span class="badge outline gray-50 primary-hover">
                                         <span class="badge-text gray white-hover">
                                             <?= APP_NAME ?>
                                         </span>
@@ -754,16 +443,15 @@
                 ?>
             </div>
             <div class="mt-4 text-center">
-                <button id="load-more-button" class="button outline white tertiary-hover magnetic-effect">
-                    <span class="button-text white white-hover">
+                <button id="load-more-button" class="button outline black primary-hover magnetic-effect">
+                    <span class="button-text black black-hover">
                         Charger plus
                     </span>
-                    <i class="fa-solid fa-arrow-rotate-right button-icon white white-hover"></i>
+                    <i class="fa-solid fa-arrow-rotate-right button-icon black black-hover"></i>
                 </button>
             </div>
         </div>
     </section>
-
 </main>
 
 <?php include __DIR__ . DIRECTORY_SEPARATOR . 'part/footer-' . $__theme . '.php'; ?>

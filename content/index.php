@@ -1,6 +1,6 @@
 <?php
 
-    $__theme = 'sombre';
+    $__theme = 'clair';
 
     if ( isset($_GET['theme']) AND in_array($_GET['theme'], array('clair', 'sombre', 'hiver'))  ) {
         $__theme = htmlspecialchars(trim($_GET['theme']));
