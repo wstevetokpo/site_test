@@ -7,7 +7,7 @@
     <title><?= $page_title ?></title>
     <meta name="description" content="<?= $page_md ?>">
     <meta name="author" content="Steve Tokpo">
-    <link rel="shortcut icon" href="<?= HOME_PATH ?>favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?= HOME_PATH ?>favicon.svg"/>
     
     <link rel="stylesheet" href="<?= HOME_PATH ?>assets/css/vendor/preloader.min.css" />
     <link rel="stylesheet" href="<?= HOME_PATH ?>assets/css/vendor/font-family.min.css" />
