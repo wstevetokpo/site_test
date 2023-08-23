@@ -51,3 +51,28 @@
         return false
     }
 </script>
+
+<script>
+    const audioButton = document.getElementById('audio-button');
+    let isPlaying = false;
+    let audio = new Audio('https://ia601409.us.archive.org/19/items/emmetelle-awake/Emmetelle-Awake.mp3');
+
+    audioButton.addEventListener('click', () => {
+        if (isPlaying) {
+            audio.pause();
+            audioButton.innerHTML = '<i class="fas fa-play"></i>';
+        } else {
+            audio.play();
+            audioButton.innerHTML = '<i class="fas fa-pause"></i>';
+        }
+        isPlaying = !isPlaying;
+    });
+    /*const leftBtn = ocument.getElementById('cleft');
+    const rightBtn = ocument.getElementById('cright');
+    leftBtn.addEventListener('click', () => {
+        window.location.href = "<?= HOME_PATH . '?theme=' . $prev ?>"
+    });
+    rightBtn.addEventListener('click', () => {
+        window.location.href = "<?= HOME_PATH . '?theme=' . $next ?>"
+    }); */
+</script>

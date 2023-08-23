@@ -1,20 +1,39 @@
+<div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
+    <p class="description white-85">
+        Ne manquez pas cette énorme offre qui est à présent limité!
+    </p>
+    <a href="<?= HOME_PATH ?>" target="_blank" class="button simple">
+        <span class="button-text white white-hover">
+            <mark class="animated-underline tertiary active">
+                Demander un devis maintenant
+            </mark>
+        </span>
+        <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+    </a>
+    <button id="popup-bar-dismiss" class="button close-button">
+        <i class="fa-solid fa-xmark button-icon white tertiary-hover"></i>
+    </button>
+</div>
 <header id="header" class="shock-header">
+<button id="audio-button">
+    <i class="fas fa-play"></i>
+</button>
     <nav id="navbar" class="navbar navbar-menu-grid scheme-1">
         <div class="container-fluid">
             <a class="navbar-brand" href="<?= HOME_PATH ?>">
                 <?php
                     if ( $__theme === 'dark' ) {
                 ?>
-                        <img src="<?= HOME_PATH ?>assets/img/logo-white.svg" alt="Logo Blanc de <?= APP_NAME ?>" class="logo main-logo" />
-                        <img src="<?= HOME_PATH ?>assets/img/logo.svg" alt="Logo de <?= APP_NAME ?>" class="logo sticky-logo" />
-                        <img src="<?= HOME_PATH ?>assets/img/logo-white.svg" alt="Logo Blanc de <?= APP_NAME ?>" class="logo mobile-logo" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo-white.png" alt="Logo Blanc de <?= APP_NAME ?>" class="logo main-logo rotations" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo.png" alt="Logo de <?= APP_NAME ?>" class="logo sticky-logo rotations" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo-white.png" alt="Logo Blanc de <?= APP_NAME ?>" class="logo mobile-logo rotations" />
                 <?php
                     }
                     else {
                 ?>
-                        <img src="<?= HOME_PATH ?>assets/img/logo.svg" alt="Logo Blanc de <?= APP_NAME ?>" class="logo main-logo" />
-                        <img src="<?= HOME_PATH ?>assets/img/logo.svg" alt="Logo de <?= APP_NAME ?>" class="logo sticky-logo" />
-                        <img src="<?= HOME_PATH ?>assets/img/logo.svg" alt="Logo Blanc de <?= APP_NAME ?>" class="logo mobile-logo" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo-white.png" alt="Logo Blanc de <?= APP_NAME ?>" class="logo main-logo rotations" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo.png" alt="Logo de <?= APP_NAME ?>" class="logo sticky-logo rotations" />
+                        <img src="<?= HOME_PATH ?>assets/img/logo-white.png" alt="Logo Blanc de <?= APP_NAME ?>" class="logo mobile-logo rotations" />
                 <?php
                     }
                 ?>
